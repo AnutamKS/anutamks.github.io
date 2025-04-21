@@ -1,16 +1,15 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![anutamks](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/AnutamKS)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+Hi I'm Anutam Srinivasan. I am a senior at The Ohio State University studying Electrical & Computer Engineering, Mathematics. During my undegrad, I have been fortunate to work under the guidance of Dr. Aaron Nielsen to develop 
+physics informed machine learning approaches for magnetic anomaly navigation, Dr. Srini Parthasarathy and Dr. Pranav Maneriker to consider problems within fairness and uncertainity qunatification, and Dr. Kannan Athreya to identify signal leakage within a powerline. 
 
 #### Email
-sli[at]cumt.edu.cn
+srinivasan.268[at]osu.edu
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+Ph.D, Robotics, Georgia Institute of Technology, 2025- (Incoming).\
+B.S., Electrical & Computer Engineering, The Ohio State University, 2021-2025.
 
-#### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
 
