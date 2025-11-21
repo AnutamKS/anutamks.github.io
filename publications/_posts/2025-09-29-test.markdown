@@ -4,7 +4,7 @@ date:   2025-09-29
 image: /publications/images/fed_cf.png
 image_onhover: /publications/images/fed_cf.png
 author: "Anutam Srinivasan*, Aditya Vadlamani*, Amin Meghrazi,<br>Srinivasan Parthasarathy *Equal Contribution"
-authors: "<strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>, Aditya Vadlamani<span class='contribution-note'>*</span>,  Amin Meghrazi,<br>Srinivasan Parthasarathy <span class='contribution-note'>*Equal Contribution</span>"
+authors: "<span class='author-name'><strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>,</span> <span class='author-name'>Aditya Vadlamani<span class='contribution-note'>*</span>,</span> <span class='author-name'>Amin Meghrazi,</span> <span class='author-name'>Srinivasan Parthasarathy</span> <span class='contribution-note'>*Equal Contribution</span>"
 venue: "arXiv <span class='note'>(Under Review)</span>"
 bib: |
   @article{srinivasan2025fedcf,

@@ -4,7 +4,7 @@ date:   2025-05-15
 image: /publications/images/all_methods_Flickr.png
 image_onhover: /publications/images/all_methods_Flickr.png
 author: "Pranav Maneriker, Aditya Vadlamani, Anutam Srinivasan, Yuntian He, Ali Payani, Srinivasan Parthasarathy"
-authors: "Pranav Maneriker, Aditya Vadlamani, <strong>Anutam Srinivasan</strong>,<br>Yuntian He, Ali Payani, Srinivasan Parthasarathy"
+authors: "<span class='author-name'>Pranav Maneriker,</span> <span class='author-name'>Aditya Vadlamani,</span> <span class='author-name'><strong>Anutam Srinivasan</strong>,</span> <span class='author-name'>Yuntian He,</span> <span class='author-name'>Ali Payani,</span> <span class='author-name'>Srinivasan Parthasarathy</span>"
 venue: "TMLR"
 bib: |
   @article{manerikerconformal,

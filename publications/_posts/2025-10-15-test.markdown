@@ -4,7 +4,7 @@ date:   2025-10-15
 image: /publications/images/ersm_figure.png
 image_onhover: /publications/images/ersm_figure.png
 author: "<strong>Anutam Srinivasan</strong>, Aaron Nielsen"
-authors: "<strong>Anutam Srinivasan</strong>, Aaron Nielsen"
+authors: "<span class='author-name'><strong>Anutam Srinivasan</strong>,</span> <span class='author-name'>Aaron Nielsen</span>"
 venue: "arXiv <span class='note'>(Under Review)</span>"
 bib: |
   @article{srinivasan2025extending,

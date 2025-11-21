@@ -4,7 +4,7 @@ date:   2025-11-10
 image: /publications/images/quad_trajectory.png
 image_onhover: /publications/images/cropped_video.gif
 author: "<strong>Anutam Srinivasan</strong>, Glen Chou"
-authors: "<strong>Anutam Srinivasan</strong>, Glen Chou"
+authors: "<span class='author-name'><strong>Anutam Srinivasan</strong>,</span> <span class='author-name'>Glen Chou</span>"
 venue: "Preprint <span class='note'>(Under Review)</span>"
 bib: |
   @article{srinivasan2025safety,

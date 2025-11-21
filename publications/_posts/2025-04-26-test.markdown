@@ -4,7 +4,7 @@ date:   2025-04-26
 image: /publications/images/cf_fig.png
 image_onhover: /publications/images/cf_fig.gif
 author: "Aditya Vadlamani*, Anutam Srinivasan*, Pranav Maneriker, Ali Payani, <br>Srinivasan Parthasarathy *Equal Contribution"
-authors: "Aditya Vadlamani<span class='contribution-note'>*</span>, <strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>, Pranav Maneriker,<br>Ali Payani, Srinivasan Parthasarathy <span class='contribution-note'>*Equal Contribution</span>"
+authors: "<span class='author-name'>Aditya Vadlamani<span class='contribution-note'>*</span>,</span> <span class='author-name'><strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>,</span> <span class='author-name'>Pranav Maneriker,</span> <span class='author-name'>Ali Payani,</span> <span class='author-name'>Srinivasan Parthasarathy</span> <span class='contribution-note'>*Equal Contribution</span>"
 venue: "ICLR"
 bib: |
   @inproceedings{vadlamani2025generic,

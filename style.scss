@@ -230,6 +230,11 @@ body {
     color: $hover-color;
     text-decoration: none;
   }
+
+  /* Prevent author names from splitting across lines */
+  .author-name {
+    display: inline-block;
+  }
 }
 
 /* Target your name specifically */
@@ -239,6 +244,7 @@ body {
 
 /* Style for the equal contribution notes */
 .publication .authors .contribution-note {
+  white-space: nowrap;
   color: #02407e; /* A darker gray for the asterisks and note */
 }
 
