@@ -1,0 +1,19 @@
+---
+title:  "Extending Temporal Disturbance Estimations For Magnetic Anomaly Navigation and Mapping"
+date:   2025-10-15
+image: /publications/images/ersm_figure.png
+image_onhover: /publications/images/ersm_figure.png
+author: "<strong>Anutam Srinivasan</strong>, Aaron Nielsen"
+authors: "<strong>Anutam Srinivasan</strong>, Aaron Nielsen"
+venue: "arXiv <span class='note'>(Under Review)</span>"
+bib: |
+  @article{srinivasan2025extending,
+    title={Extending Temporal Disturbance Estimations For Magnetic Anomaly Navigation and Mapping},
+    author={Srinivasan, Anutam and Nielsen, Aaron},
+    journal={arXiv preprint arXiv:2510.15113},
+    year={2025}
+  }
+links:
+  preprint: "/publications/papers/preprint_2025_ersm.pdf"
+---
+Slow-moving vehicles relying on crustal magnetic anomaly navigation (MagNav) or vehicles revisiting the same location in a short time - such as those used for surveys in magnetic anomaly mapping -  require fixed ground stations within 100 km of the vehicle's trajectory to measure and remove the geomagnetic disturbance field from magnetic readings. This approach is impractical due to the limited network of fixed-ground magnetometer stations, making long-range (several hundred kilometers long) aeromagnetic surveys for anomaly map-making infeasible. To address these challenges, we developed the Extended Reference Station Model (ERSM). ERSM applies a longitudinal correction and regression model to an extended reference ground magnetometer station (ERS) to produce an estimate of the local temporal disturbance field. ERSM is regression model-agnostic, so we implemented a linear regression, a k-nearest neighbors (kNN) regression, and a neural-network regression model to assess performance benefits. Our results show typical performance below 10nT root mean square error and median performance below 5nT for typical use with the kNN and neural-net model for farther distances and below 5nT performance using the linear regression model on stations with proximity. We also consider how space-weather events, water-body separation, and proximity to polar regions affect the model performance based on ERS selection.

@@ -1,0 +1,30 @@
+---
+title:  "A Generic Framework For Conformal Fairness"
+date:   2025-04-26
+image: /publications/images/cf_fig.png
+image_onhover: /publications/images/cf_fig.gif
+author: "Aditya Vadlamani*, Anutam Srinivasan*, Pranav Maneriker, Ali Payani, <br>Srinivasan Parthasarathy *Equal Contribution"
+authors: "Aditya Vadlamani<span class='contribution-note'>*</span>, <strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>, Pranav Maneriker,<br>Ali Payani, Srinivasan Parthasarathy <span class='contribution-note'>*Equal Contribution</span>"
+venue: "ICLR"
+bib: |
+  @inproceedings{vadlamani2025generic,
+    title={A Generic Framework for Conformal Fairness},
+    author={Vadlamani*, Aditya T and Srinivasan*, Anutam and Maneriker, Pranav and Payani, Ali and Parthasarath, Srinivasan},
+    booktitle={The Thirteenth International Conference on Learning Representations},
+    year={2025, *Equal Contribution}
+  }
+links:
+  code: https://github.com/AdityaVadlamani/conformal-fairness
+  paper: "/publications/papers/iclr_2025_conformal.pdf"
+---
+Conformal Prediction (CP) is a popular method for uncertainty quantification
+ with machine learning models. While conformal prediction provides probabilistic
+ guarantees regarding the coverage of the true label, these guarantees are agnostic
+ to the presence of sensitive attributes within the dataset. In this work, we formalize
+ Conformal Fairness, a notion of fairness using conformal predictors, and provide
+ a theoretically well-founded algorithm and associated framework to control for
+ the gaps in coverage between different sensitive groups. Our framework leverages
+ the exchangeability assumption (implicit to CP) rather than the typical IID assumption, allowing us to apply the notion of Conformal Fairness to data types and
+ tasks that are not IID, such as graph data. Experiments were conducted on graph
+ and tabular datasets to demonstrate that the algorithm can control fairness-related
+ gaps in addition to coverage aligned with theoretical expectations.

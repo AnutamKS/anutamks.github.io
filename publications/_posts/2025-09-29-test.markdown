@@ -1,0 +1,19 @@
+---
+title:  "FedCF: Fair Federated Conformal Prediction"
+date:   2025-09-29
+image: /publications/images/fed_cf.png
+image_onhover: /publications/images/fed_cf.png
+author: "Anutam Srinivasan*, Aditya Vadlamani*, Amin Meghrazi,<br>Srinivasan Parthasarathy *Equal Contribution"
+authors: "<strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>, Aditya Vadlamani<span class='contribution-note'>*</span>,  Amin Meghrazi,<br>Srinivasan Parthasarathy <span class='contribution-note'>*Equal Contribution</span>"
+venue: "arXiv <span class='note'>(Under Review)</span>"
+bib: |
+  @article{srinivasan2025fedcf,
+    title={FedCF: Fair Federated Conformal Prediction},
+    author={Srinivasan*, Anutam and Vadlamani*, Aditya T and Meghrazi, Amin and Parthasarathy, Srinivasan},
+    journal={arXiv preprint arXiv:2509.22907},
+    year={2025, *Equal Contribution}
+  }
+links:
+  preprint: "/publications/papers/preprint_2025_fedcf.pdf"
+---
+Conformal Prediction (CP) is a widely used technique for quantifying uncertainty in machine learning models. In its standard form, CP offers probabilistic guarantees on the coverage of the true label, but it is agnostic to sensitive attributes in the dataset. Several recent works have sought to incorporate fairness into CP by ensuring conditional coverage guarantees across different subgroups. One such method is Conformal Fairness (CF). In this work, we extend the CF framework to the Federated Learning setting and discuss how we can audit a federated model for fairness by analyzing the fairness-related gaps for different demographic groups. We empirically validate our framework by conducting experiments on several datasets spanning multiple domains, fully leveraging the exchangeability assumption.

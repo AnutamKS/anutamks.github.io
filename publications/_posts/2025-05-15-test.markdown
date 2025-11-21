@@ -1,0 +1,20 @@
+---
+title:  "Conformal Prediction: A Theoretical Note and Benchmarking Transductive Node Classification in Graphs"
+date:   2025-05-15
+image: /publications/images/all_methods_Flickr.png
+image_onhover: /publications/images/all_methods_Flickr.png
+author: "Pranav Maneriker, Aditya Vadlamani, Anutam Srinivasan, Yuntian He, Ali Payani, Srinivasan Parthasarathy"
+authors: "Pranav Maneriker, Aditya Vadlamani, <strong>Anutam Srinivasan</strong>,<br>Yuntian He, Ali Payani, Srinivasan Parthasarathy"
+venue: "TMLR"
+bib: |
+  @article{manerikerconformal,
+  title={Conformal Prediction: A Theoretical Note and Benchmarking Transductive Node Classification in Graphs},
+  author={Maneriker, Pranav and Vadlamani, Aditya T and Srinivasan, Anutam and He, Yuntian and Payani, Ali and Parthasarathy, Srinivasan},
+  journal={Transactions on Machine Learning Research}
+  year={2025}
+  }
+links:
+  code: https://github.com/pranavmaneriker/graphconformal-code
+  paper: "/publications/papers/tmlr_2025_graph_conformal.pdf"
+---
+Conformal prediction has become increasingly popular for quantifying the uncertainty associated with machine learning models. Recent work in graph uncertainty quantification has built upon this approach for conformal graph prediction. The nascent nature of these explorations has led to conflicting choices for implementations, baselines, and method evaluation. In this work, we analyze the design choices made in the literature and discuss the tradeoffs associated with existing methods. Building on the existing implementations, we introduce techniques to scale existing methods to large-scale graph datasets without sacrificing performance. Our theoretical and empirical results justify our recommendations for future scholarship in graph conformal prediction.

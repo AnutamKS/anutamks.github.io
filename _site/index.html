@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above meta tags must come first -->
+
+  <meta name="author" content="Anutam Srinivasan" />
+  <title>Anutam Srinivasan</title>
+
+  <!-- Bootstrap CSS 4.6.0, never versions fail to load -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="canonical" href="http://localhost:4000/">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body class="d-flex flex-column">
+  <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" style="z-index:3;">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- TODO: Use scroll-spy -->
+            
+            <li class='nav-item  active '>
+                <a class="nav-link" href='/#'>
+                    About <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            
+            <li class='nav-item '>
+                <a class="nav-link" href='/#publications'>
+                    Publications 
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+  <div class="container-fluid flex-fill">
+    <div class="row flex-column-reverse flex-md-row py-2">
+    <div class="col-md-8" id="bio">
+        <h1>Anutam Srinivasan</h1>
+        <p class="text-justify">
+            Hi I'm Anutam Srinivasan, a Robotics Ph.D. student in the <a target="_blank" href="https://trustworthyrobotics.github.io/">Trustworthy Robotics Lab</a> at Georgia Tech advised by <a target="_blank" href="https://glenchou.github.io/">Prof. Glen Chou</a>.
+        </p>
+        <p class="text-justify">
+            <strong class="statement-header">Research Statement:</strong> In an uncertainty fraught world, it is essential to mitigate uncertainty propogation in the ML-driven full-stack autonomy-loop for trustworthy performance.
+            To this end, I am working on theoreticaly grounded frameworks to <em>actively</em> reduce uncertainty in the robotics-stack, entailing perception, controls, and reasoning.
+        </p>
+        <p class="text-justify">
+            <a data-toggle="collapse" href="#background-collapse" role="button" aria-expanded="false" aria-controls="background-collapse">
+                Undergraduate (The Ohio State University)
+            </a>
+        </p>
+        <div class="collapse" id="background-collapse">
+            <p class="text-justify">
+                During my undergraduate, I double majored in Electrical & Computer Engineering and Mathematics. I was also fortunate to work with several encouraging mentors and advisors on projects that have shape my current research outlook.
+            </p>
+            <ul>
+            <li>Under the advisement of <a target="_blank" href="https://www.afit.edu/bios/bio.cfm?facID=818">Prof. Aaron Nielsen</a> (Air Force Institute of Technology) to develop physics-informed machine-learning approaches to remove magnetic noise for magnetic anomaly navigation in GPS-contested environments.</li>
+            <li>I co-developed a framework for <em>algorithmically Fair</em> Conformal Prediction, a UQ technique, under the guidance of <a target="_blank" href="https://pranavmaneriker.github.io/">Dr. Pranav Maneriker</a> (Dolby Labs), and <a target="_blank" href="https://tdai.osu.edu/people/parthasarathy.2">Prof. Srini Parthasarathy</a> (Ohio State).</li>
+            <li>I also worked with <a target="_blank" href="https://cse.osu.edu/people/athreya.14">Prof. Kannan Athreya</a> (Ohio State) to develop methods to identify and mitigate signal leakage on wireless communications from phones connected to the powerline.</li>
+            </ul>
+        </div>
+        <p class="text-justify">
+            <a data-toggle="collapse" href="#personal-collapse" role="button" aria-expanded="false" aria-controls="personal-collapse">
+                Personal
+            </a>
+        </p>
+        <div class="collapse" id="personal-collapse">
+            <p class="text-justify">
+                Outside of research, I enjoy playing tennis and squash, watching college football (Go Buckeyes!), and hanging out with friends. 
+            </p>
+        </div>
+        <p style="text-align:center">
+            <a target="_blank" href="mailto:asrinivasan350@gatech.edu">Email</a> &nbsp;/&nbsp;
+            <a href="https://github.com/AnutamKS">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://scholar.google.com/citations?user=">Google Scholar</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/anutam-srinivasan-0896a521a/">LinkedIn </a>
+        </p>
+    </div>
+    <div class="col-md-4" style="z-index:4;">
+        <img alt="profile photo" id="portrait" src="images/IMG_9366.jpg">
+    </div>
+</div>
+
+
+
+<div class="row py-2">
+    <div class="col-md-12" id="publications">
+        <h2>Publications</h2>
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/quad_trajectory.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/cropped_video.gif" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis</h3>
+        <br>
+        <div class="authors">
+            <strong>Anutam Srinivasan</strong>, Glen Chou
+        </div>
+
+        <em>Preprint <span class='note'>(Under Review)</span></em>, 2025
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal1">bib</a>
+        <div class="modal fade" id="publicationBibModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @article{srinivasan2025safety,<br />
+  title={Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis},<br />
+  author={Srinivasan, Anutam and Chou, Glen},<br />
+  journal={preprint},<br />
+  year={2025}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="/publications/papers/preprint_2025_sls_cp_mpc.pdf" target="_blank">preprint</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract1" role="button" aria-expanded="false" aria-controls="abstract1">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract1">
+            <div class="abstract-body">
+                <p>We present a novel framework for robust out-of-distribution planning and control using conformal prediction (CP) and system level synthesis (SLS). Our method addresses the challenge of ensuring safety and robustness when using learned dynamics models beyond the training data distribution. We first derive high-confidence bounds on model errors using weighted conformal prediction with a learned, state-control-dependent covariance model. These bounds are then integrated into an SLS-based robust nonlinear model predictive control (RMPC) formulation, which performs constraint tightening over the prediction horizon via volume-optimized forward reachable sets. We provide theoretical guarantees on coverage and robustness under distributional drift, and analyze the impact of data density and trajectory tube size on prediction coverage. Empirically, we demonstrate our approach on nonlinear systems of increasing complexity, including a 4D car and a {12D} quadcopter, showing improved safety and reliability compared to fixed-bound and non-robust baselines, especially outside of the collected data distribution.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/ersm_figure.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/ersm_figure.png" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>Extending Temporal Disturbance Estimations For Magnetic Anomaly Navigation and Mapping</h3>
+        <br>
+        <div class="authors">
+            <strong>Anutam Srinivasan</strong>, Aaron Nielsen
+        </div>
+
+        <em>arXiv <span class='note'>(Under Review)</span></em>, 2025
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal2">bib</a>
+        <div class="modal fade" id="publicationBibModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Extending Temporal Disturbance Estimations For Magnetic Anomaly Navigation and Mapping</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @article{srinivasan2025extending,<br />
+  title={Extending Temporal Disturbance Estimations For Magnetic Anomaly Navigation and Mapping},<br />
+  author={Srinivasan, Anutam and Nielsen, Aaron},<br />
+  journal={arXiv preprint arXiv:2510.15113},<br />
+  year={2025}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="/publications/papers/preprint_2025_ersm.pdf" target="_blank">preprint</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract2" role="button" aria-expanded="false" aria-controls="abstract2">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract2">
+            <div class="abstract-body">
+                <p>Slow-moving vehicles relying on crustal magnetic anomaly navigation (MagNav) or vehicles revisiting the same location in a short time - such as those used for surveys in magnetic anomaly mapping -  require fixed ground stations within 100 km of the vehicle’s trajectory to measure and remove the geomagnetic disturbance field from magnetic readings. This approach is impractical due to the limited network of fixed-ground magnetometer stations, making long-range (several hundred kilometers long) aeromagnetic surveys for anomaly map-making infeasible. To address these challenges, we developed the Extended Reference Station Model (ERSM). ERSM applies a longitudinal correction and regression model to an extended reference ground magnetometer station (ERS) to produce an estimate of the local temporal disturbance field. ERSM is regression model-agnostic, so we implemented a linear regression, a k-nearest neighbors (kNN) regression, and a neural-network regression model to assess performance benefits. Our results show typical performance below 10nT root mean square error and median performance below 5nT for typical use with the kNN and neural-net model for farther distances and below 5nT performance using the linear regression model on stations with proximity. We also consider how space-weather events, water-body separation, and proximity to polar regions affect the model performance based on ERS selection.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/fed_cf.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/fed_cf.png" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>FedCF: Fair Federated Conformal Prediction</h3>
+        <br>
+        <div class="authors">
+            <strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>, Aditya Vadlamani<span class='contribution-note'>*</span>,  Amin Meghrazi,<br>Srinivasan Parthasarathy <span class='contribution-note'>*Equal Contribution</span>
+        </div>
+
+        <em>arXiv <span class='note'>(Under Review)</span></em>, 2025
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal3">bib</a>
+        <div class="modal fade" id="publicationBibModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FedCF: Fair Federated Conformal Prediction</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @article{srinivasan2025fedcf,<br />
+  title={FedCF: Fair Federated Conformal Prediction},<br />
+  author={Srinivasan*, Anutam and Vadlamani*, Aditya T and Meghrazi, Amin and Parthasarathy, Srinivasan},<br />
+  journal={arXiv preprint arXiv:2509.22907},<br />
+  year={2025, *Equal Contribution}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="/publications/papers/preprint_2025_fedcf.pdf" target="_blank">preprint</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract3" role="button" aria-expanded="false" aria-controls="abstract3">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract3">
+            <div class="abstract-body">
+                <p>Conformal Prediction (CP) is a widely used technique for quantifying uncertainty in machine learning models. In its standard form, CP offers probabilistic guarantees on the coverage of the true label, but it is agnostic to sensitive attributes in the dataset. Several recent works have sought to incorporate fairness into CP by ensuring conditional coverage guarantees across different subgroups. One such method is Conformal Fairness (CF). In this work, we extend the CF framework to the Federated Learning setting and discuss how we can audit a federated model for fairness by analyzing the fairness-related gaps for different demographic groups. We empirically validate our framework by conducting experiments on several datasets spanning multiple domains, fully leveraging the exchangeability assumption.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/all_methods_Flickr.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/all_methods_Flickr.png" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>Conformal Prediction: A Theoretical Note and Benchmarking Transductive Node Classification in Graphs</h3>
+        <br>
+        <div class="authors">
+            Pranav Maneriker, Aditya Vadlamani, <strong>Anutam Srinivasan</strong>,<br>Yuntian He, Ali Payani, Srinivasan Parthasarathy
+        </div>
+
+        <em>TMLR</em>, 2025
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal4">bib</a>
+        <div class="modal fade" id="publicationBibModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Conformal Prediction: A Theoretical Note and Benchmarking Transductive Node Classification in Graphs</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @article{manerikerconformal,<br />
+title={Conformal Prediction: A Theoretical Note and Benchmarking Transductive Node Classification in Graphs},<br />
+author={Maneriker, Pranav and Vadlamani, Aditya T and Srinivasan, Anutam and He, Yuntian and Payani, Ali and Parthasarathy, Srinivasan},<br />
+journal={Transactions on Machine Learning Research}<br />
+year={2025}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="https://github.com/pranavmaneriker/graphconformal-code" target="_blank">code</a>
+            
+                 / 
+                
+                <a href="/publications/papers/tmlr_2025_graph_conformal.pdf" target="_blank">paper</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract4" role="button" aria-expanded="false" aria-controls="abstract4">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract4">
+            <div class="abstract-body">
+                <p>Conformal prediction has become increasingly popular for quantifying the uncertainty associated with machine learning models. Recent work in graph uncertainty quantification has built upon this approach for conformal graph prediction. The nascent nature of these explorations has led to conflicting choices for implementations, baselines, and method evaluation. In this work, we analyze the design choices made in the literature and discuss the tradeoffs associated with existing methods. Building on the existing implementations, we introduce techniques to scale existing methods to large-scale graph datasets without sacrificing performance. Our theoretical and empirical results justify our recommendations for future scholarship in graph conformal prediction.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/cf_fig.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/cf_fig.gif" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>A Generic Framework For Conformal Fairness</h3>
+        <br>
+        <div class="authors">
+            Aditya Vadlamani<span class='contribution-note'>*</span>, <strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>, Pranav Maneriker,<br>Ali Payani, Srinivasan Parthasarathy <span class='contribution-note'>*Equal Contribution</span>
+        </div>
+
+        <em>ICLR</em>, 2025
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal5">bib</a>
+        <div class="modal fade" id="publicationBibModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">A Generic Framework For Conformal Fairness</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @inproceedings{vadlamani2025generic,<br />
+  title={A Generic Framework for Conformal Fairness},<br />
+  author={Vadlamani*, Aditya T and Srinivasan*, Anutam and Maneriker, Pranav and Payani, Ali and Parthasarath, Srinivasan},<br />
+  booktitle={The Thirteenth International Conference on Learning Representations},<br />
+  year={2025, *Equal Contribution}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="https://github.com/AdityaVadlamani/conformal-fairness" target="_blank">code</a>
+            
+                 / 
+                
+                <a href="/publications/papers/iclr_2025_conformal.pdf" target="_blank">paper</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract5" role="button" aria-expanded="false" aria-controls="abstract5">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract5">
+            <div class="abstract-body">
+                <p>Conformal Prediction (CP) is a popular method for uncertainty quantification with machine learning models. While conformal prediction provides probabilistic guarantees regarding the coverage of the true label, these guarantees are agnostic to the presence of sensitive attributes within the dataset. In this work, we formalize Conformal Fairness, a notion of fairness using conformal predictors, and provide a theoretically well-founded algorithm and associated framework to control for the gaps in coverage between different sensitive groups. Our framework leverages the exchangeability assumption (implicit to CP) rather than the typical IID assumption, allowing us to apply the notion of Conformal Fairness to data types and tasks that are not IID, such as graph data. Experiments were conducted on graph and tabular datasets to demonstrate that the algorithm can control fairness-related gaps in addition to coverage aligned with theoretical expectations.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+  </div>
+
+  <footer class="page-footer navbar-fixed-bottom font-small">
+    <div class="footer-copyright text-center py-3">
+        A <a href="https://github.com/vsimkus/academic-jekyll">Jekyll template</a> inspired by <a href="https://jonbarron.info">Jon Barron's website</a>.
+    </div>
+</footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="/publication_effects.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+

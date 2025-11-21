@@ -1,69 +1,26 @@
+# Academic personal page based on Jekyll-Now and Bootstrap
 
+A minimalistic, accessible, and mobile friendly [Jekyll-Now](https://github.com/barryclark/jekyll-now) template for academics. 
+Preview available at <https://vsimkus.github.io/academic-jekyll/>.
 
-![Github Forks](https://img.shields.io/github/forks/senli1073/senli1073.github.io?style=flat)
-![Github Stars](https://img.shields.io/github/stars/senli1073/senli1073.github.io?style=flat)
-![License](https://img.shields.io/github/license/senli1073/senli1073.github.io)
-![Last Commit](https://img.shields.io/github/last-commit/senli1073/senli1073.github.io)
+## Desktop preview
 
-# A simple Github Pages template for personal academic websites.
+![Desktop preview](/images/academic-jekyll-desktop.png)
 
-## Preview
-[![Screenshot of the Website](https://raw.githubusercontent.com/senli1073/senli1073.github.io/main/screenshot_full.png)](https://senli1073.github.io/)
+## Mobile preview
 
+![Mobile preview](/images/academic-jekyll-mobile.png)
 
-## Introduction
+## Usage
 
-This personal academic website template is based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
+Fork this repository edit the `_config.yml` as described in [Jekyll-Now docs](https://github.com/barryclark/jekyll-now/blob/master/README.md#quick-start), edit the bio section in `index.html` with your details, rename the repository to `your_username.github.io` and make it public. Your website should be up and running.
 
-The template is designed to integrate Markdown files as content input.  There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
+Upload your portrait picture to `images` and use `_make_favicon.sh` to create the favicon.
 
-This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
+To add a publication, create a new file in `publications/_posts/` directory, place the related illustration in `publications/images`, and run `_make_thumbnails.sh` to create standardised thumbnail images.
 
-:milky_way: Demo: https://senli1073.github.io/
+## Attributions
 
+The website design is inspired by [Jon Barron's website](https://jonbarron.info/) and the initial Jekyll-Now fork was done by [Leonid Keselman](https://github.com/leonidk/new_website). I have redesigned this website with Bootstrap to be more mobile-friendly and accessible.
 
-## Getting Start
-### 1. Fork this repository
-The repository name should be `<username>.github.io`, which will also be your website's URL.
-
-
-### 2. Edit page content
-
-(1) Go to the folder where you want to store your project, and clone the new repository:
-```
-git clone https://github.com/<username>/<username>.github.io.git
-```
-The directory structure is as follows:
-
-```.
-.
-├── contents
-└── static
-    ├── assets
-    │   └── img
-    ├── css
-    └── js
-```
-
-(2) Modify the content of each section, which corresponds to `contents/*.md`.
-
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
-
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
-
-(5) Push it: 
-```
-git commit -am 'init'
-git push
-```
-
-
-### 3. Enjoy
-
-Fire up a browser and go to `https://<username>.github.io`
-
-
-
-## License
-
-Copyright Sen Li, 2023. Licensed under an MIT license. You can copy and mess with this template.
+Feel free to use this template, with or without changes, to your own needs.
