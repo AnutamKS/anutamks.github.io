@@ -35,9 +35,15 @@ a {
 }
 
 a:focus,
-a:hover {
+a:hover,
+.publication .authors a:hover {
   color: $hover-color;
   text-decoration: none;
+}
+
+/* Keep dropdown link hover color when open, otherwise use default color */
+a[data-toggle="collapse"][aria-expanded="true"] {
+  color: $hover-color;
 }
 
 /* Style for dropdown carets */
