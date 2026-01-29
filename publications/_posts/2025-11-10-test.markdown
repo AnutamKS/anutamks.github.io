@@ -1,17 +1,17 @@
 ---
 title:  "Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis"
-date:   2025-11-10
+date:   2026-01-29
 image: /publications/images/quad_trajectory.png
 image_onhover: /publications/images/cropped_video.gif
 author: "<strong>Anutam Srinivasan</strong>, Glen Chou"
 authors: "<span class='author-name'><strong>Anutam Srinivasan</strong>,</span> <span class='author-name'>Glen Chou</span>"
-venue: "Preprint <span class='note'>(Under Review)</span>"
+venue: "L4DC <span class='note'>(To Appear)</span>"
 bib: |
-  @article{srinivasan2025safety,
+  @inproceedings{srinivasan2025safety,
     title={Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis},
     author={Srinivasan, Anutam and Chou, Glen},
-    journal={preprint},
-    year={2025}
+    booktitle={Learning for Dynamics and Control},
+    year={2026, (to appear)}
   }
 links:
   preprint: "/publications/papers/preprint_2025_sls_cp_mpc.pdf"
