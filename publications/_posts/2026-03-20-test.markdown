@@ -1,0 +1,19 @@
+---
+title:  "GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics"
+date:   2026-03-20
+image: /publications/images/front_figure_cdc.png
+image_onhover: /publications/images/front_figure_cdc.png
+author: "Jeffrey Fang, Keyi Shen, <strong>Anutam Srinivasan</strong>, Glen Chou"
+authors: "</span> <span class='author-name'>Jeffrey Fang</span>,</span> <span class='author-name'>Keyi Shen</span>,<span class='author-name'><strong>Anutam Srinivasan</strong>,<span class='author-name'>Glen Chou</span>"
+venue: "Preprint (under review)"
+bib: |
+  @misc{fang2026gpu,
+  title = {GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics},
+  author = {Fang, Jeffrey and Shen, Keyi and Srinivasan, Anutam and Chou, Glen},
+  note = {Preprint},
+  year = {2026}
+  }
+links:
+  preprint: "/publications/papers/preprint_2026_lin_err.pdf"
+---
+This paper studies real-time robust optimal control for uncertain nonlinear systems, where linear time-varying (LTV) approximations make planning tractable but require sound linearization error bounds (LEBs) to guarantee robust constraint satisfaction. We develop tight, differentiable, GPU-parallel LEBs for LTV approximations of nonlinear and neural network (NN) dynamics. For analytic dynamics, we introduce path-based Hessian bounds that are tighter than standard interval methods. For NN dynamics, we derive certified LEBs using NN verifier-generated affine relaxations and local Jacobian corrections. We adapt a GPU-parallel system-level synthesis LTV-based robust control solver to be compatible with these LEBs by extending it to handle right-invertible disturbance matrices and non-zero-centered disturbance sets for tight zonotopic uncertainty propagation. Our method, GPUSLS-LEO, enables online optimization of robust feedback policies that account for linearization error, producing tight, formally verified reachable tubes. On complex nonlinear and NN dynamics up to 168 state dimensions, our method can compute robust control policies on the GPU at rates up to 67 Hz, reducing solve times and conservativeness relative to baselines while preserving formal guarantees and real-time performance.

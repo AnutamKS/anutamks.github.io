@@ -14,6 +14,6 @@ bib: |
     year={2025, *Equal Contribution}
   }
 links:
-  preprint: "/publications/papers/preprint_2025_fedcf.pdf"
+  preprint: "/publications/papers/preprint_2026_fedcf.pdf"
 ---
 Conformal Prediction (CP) is a widely used technique for quantifying uncertainty in machine learning models. In its standard form, CP offers probabilistic guarantees on the coverage of the true label, but it is agnostic to sensitive attributes in the dataset. Several recent works have sought to incorporate fairness into CP by ensuring conditional coverage guarantees across different subgroups. One such method is Conformal Fairness (CF). In this work, we extend the CF framework to the Federated Learning setting and discuss how we can audit a federated model for fairness by analyzing the fairness-related gaps for different demographic groups. We empirically validate our framework by conducting experiments on several datasets spanning multiple domains, fully leveraging the exchangeability assumption.

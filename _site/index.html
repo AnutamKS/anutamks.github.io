@@ -85,7 +85,7 @@
             <a href="https://github.com/AnutamKS">GitHub</a> &nbsp;/&nbsp;
             <a href="https://scholar.google.com/citations?hl=en&user=g7ncYHcAAAAJ&view_op=list_works&gmla=AKzYXQ16CS4yKwWM7Wm-Y_5RWvLzRGkXQSyoFeHyuzTDJ6bqrG5zVX2P6-J-Yr_jK_IYTYSnbPmcGTwtYrHJZ8RG">Google Scholar</a> &nbsp;/&nbsp;
             <a href="https://www.linkedin.com/in/anutam-srinivasan-0896a521a/">LinkedIn </a> &nbsp;/&nbsp;
-            <a target="_blank" href="assets/Anutam_Srinivasan_CV_Nov_25.pdf">Curriculum Vitae</a>
+            <a target="_blank" href="assets/Anutam_Srinivasan_CV_Feb_26.pdf">Curriculum Vitae</a>
         </p>
     </div>
     <div class="col-md-4" style="z-index:4;">
@@ -103,19 +103,19 @@
 
 <div class="row py-2 publication align-items-start">
     <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
-        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/quad_trajectory.png" alt="project image" />
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/web_page_image.png" alt="project image" />
         
-        <img class="project-thumbnail post-hover" src="/tn/publications/images/cropped_video.gif" alt="project image" />
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/mpc_plan_animation_combined_rope.gif" alt="project image" />
         
     </div>
     <div class="col-md-8 col-sm-12 project-description">
-        <h3>Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis</h3>
+        <h3>Pixels to Proofs: Probabilistically-Safe Latent World Model Control via Parallel Conformal Robust MPC</h3>
         <br>
         <div class="authors">
-            <span class='author-name'><strong>Anutam Srinivasan</strong>,</span> <span class='author-name'>Glen Chou</span>
+            </span> <span class='author-name'>Devesh Nath<span class='contribution-note'>*</span>,<span class='author-name'><strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>,</span> <span class='author-name'>Haoran Yin<span class='contribution-note'>*</span>,</span> <span class='author-name'>Ruitong Jiang</span>,<span class='author-name'>Jeffrey Fang</span>, <span class='author-name'>Glen Chou</span> <span class='contribution-note'>*Equal Contribution</span>
         </div>
 
-        <em>Preprint <span class='note'>(Under Review)</span></em>, 2025
+        <em>arXiv <span class='note'>(Under Review)</span></em>, 2026
         <br>
         
         
@@ -127,17 +127,17 @@
             <div class="modal-dialog d-md-table" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Pixels to Proofs: Probabilistically-Safe Latent World Model Control via Parallel Conformal Robust MPC</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body code text-monospace bib-text">
-                    @article{srinivasan2025safety,<br />
-  title={Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis},<br />
-  author={Srinivasan, Anutam and Chou, Glen},<br />
-  journal={preprint},<br />
-  year={2025}<br />
+                    @article{nath2026pixels,<br />
+  title={Pixels to Proofs: Probabilistically-Safe Latent World Model Control via Parallel Conformal Robust MPC},<br />
+  author={Nath, Devesh and Srinivasan, Anutam and Yin, Haoran and Jiang, Ruitong and Fang, Jeffrey and Chou, Glen},<br />
+  journal={arXiv preprint arXiv:2606.15594},<br />
+  year={2026}<br />
 }<br />
 
                 </div>
@@ -153,7 +153,19 @@
             
                  / 
                 
-                <a href="/publications/papers/preprint_2025_sls_cp_mpc.pdf" target="_blank">preprint</a>
+                <a href="/publications/papers/preprint_2026_sls-squared.pdf" target="_blank">preprint</a>
+            
+                 / 
+                
+                <a href="https://trustworthyrobotics.github.io/SLS-squared/" target="_blank">website</a>
+            
+                 / 
+                
+                <a href="https://github.com/trustworthyrobotics/SLS-squared" target="_blank">code</a>
+            
+                 / 
+                
+                <a href="https://youtu.be/3sYYNSQqwSQ" target="_blank">video</a>
             
         
         
@@ -165,7 +177,220 @@
         
         <div class="collapse" id="abstract1">
             <div class="abstract-body">
-                <p>We present a novel framework for robust out-of-distribution planning and control using conformal prediction (CP) and system level synthesis (SLS). Our method addresses the challenge of ensuring safety and robustness when using learned dynamics models beyond the training data distribution. We first derive high-confidence bounds on model errors using weighted conformal prediction with a learned, state-control-dependent covariance model. These bounds are then integrated into an SLS-based robust nonlinear model predictive control (RMPC) formulation, which performs constraint tightening over the prediction horizon via volume-optimized forward reachable sets. We provide theoretical guarantees on coverage and robustness under distributional drift, and analyze the impact of data density and trajectory tube size on prediction coverage. Empirically, we demonstrate our approach on nonlinear systems of increasing complexity, including a 4D car and a {12D} quadcopter, showing improved safety and reliability compared to fixed-bound and non-robust baselines, especially outside of the collected data distribution.</p>
+                <p>We present SLS2, a framework for safe feedback motion planning from pixels using robust model predictive control (MPC) in learned latent world models. Our approach trains an action-conditioned joint-embedding world model with compact Markovian latent states, enabling efficient gradient-based trajectory optimization through learned latent dynamics. To enforce safety for the true system despite imperfect latent predictions, we inform a GPU-accelerated system level synthesis (SLS) robust MPC scheme with conformal prediction to obtain calibrated latent error bounds and robust latent-space constraint sets. We further learn and conformalize a latent constraint checker, allowing the SLS planner to impose probabilistic safety constraints during closed-loop execution. We evaluate our method on vision-based control tasks, where it improves both goal-reaching performance and safety over latent world-model and safe-planning baselines.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/auditing_ai_systems.svg" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/auditing_ai_systems.svg" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>Towards Auditing AI Systems in the Wild</h3>
+        <br>
+        <div class="authors">
+            </span> <span class='author-name'>Aditya Vadlamani</span>,<span class='author-name'><strong>Anutam Srinivasan</strong>,<span class='author-name'>Srinivasan Parthasarathy</span>
+        </div>
+
+        <em>KDD, Blue Sky Track</em>, 2026
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal2">bib</a>
+        <div class="modal fade" id="publicationBibModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Towards Auditing AI Systems in the Wild</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @inproceedings{vadlamani2026towards,<br />
+title={Towards Auditing AI Systems in the Wild},<br />
+author={Vadlamani, Aditya and Srinivasan, Anutam and Parthasarathy, Srinivasan},<br />
+booktitle={Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining},<br />
+year={2026}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="/publications/papers/kdd_bluesky_2026_auditing.pdf" target="_blank">paper</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract2" role="button" aria-expanded="false" aria-controls="abstract2">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract2">
+            <div class="abstract-body">
+                <p>AI systems are increasingly deployed in real-world settings where their behavior is shaped by dynamic environments, evolving data distributions, and complex interactions with users and infrastructure. Traditional machine learning evaluation focuses on benchmarks and operates within sandboxed environments, providing only a limited view of the true system behavior in the wild. We argue for the development of principled auditing frameworks that monitor deployed AI systems throughout their lifecycle. We further propose framing auditing as a statistical problem of monitoring constraint violations under uncertainty, where desired properties (e.g., fairness and safety) are treated as risk-controlled constraints that must be continuously evaluated as systems evolve through iterative feedback. This perspective highlights the need for uncertainty-aware monitoring methods, socio-technical specifications of audit criteria, and auditing infrastructures that enable ongoing oversight of AI systems in the wild.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/front_figure_cdc.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/front_figure_cdc.png" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics</h3>
+        <br>
+        <div class="authors">
+            </span> <span class='author-name'>Jeffrey Fang</span>,</span> <span class='author-name'>Keyi Shen</span>,<span class='author-name'><strong>Anutam Srinivasan</strong>,<span class='author-name'>Glen Chou</span>
+        </div>
+
+        <em>Preprint (under review)</em>, 2026
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal3">bib</a>
+        <div class="modal fade" id="publicationBibModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @misc{fang2026gpu,<br />
+title = {GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics},<br />
+author = {Fang, Jeffrey and Shen, Keyi and Srinivasan, Anutam and Chou, Glen},<br />
+note = {Preprint},<br />
+year = {2026}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="/publications/papers/preprint_2026_lin_err.pdf" target="_blank">preprint</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract3" role="button" aria-expanded="false" aria-controls="abstract3">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract3">
+            <div class="abstract-body">
+                <p>This paper studies real-time robust optimal control for uncertain nonlinear systems, where linear time-varying (LTV) approximations make planning tractable but require sound linearization error bounds (LEBs) to guarantee robust constraint satisfaction. We develop tight, differentiable, GPU-parallel LEBs for LTV approximations of nonlinear and neural network (NN) dynamics. For analytic dynamics, we introduce path-based Hessian bounds that are tighter than standard interval methods. For NN dynamics, we derive certified LEBs using NN verifier-generated affine relaxations and local Jacobian corrections. We adapt a GPU-parallel system-level synthesis LTV-based robust control solver to be compatible with these LEBs by extending it to handle right-invertible disturbance matrices and non-zero-centered disturbance sets for tight zonotopic uncertainty propagation. Our method, GPUSLS-LEO, enables online optimization of robust feedback policies that account for linearization error, producing tight, formally verified reachable tubes. On complex nonlinear and NN dynamics up to 168 state dimensions, our method can compute robust control policies on the GPU at rates up to 67 Hz, reducing solve times and conservativeness relative to baselines while preserving formal guarantees and real-time performance.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row py-2 publication align-items-start">
+    <div class="col-md-4 col-sm-12 project-thumbnail-parent" align="center">
+        <img class="project-thumbnail  pre-hover " src="/tn/publications/images/quad_trajectory.png" alt="project image" />
+        
+        <img class="project-thumbnail post-hover" src="/tn/publications/images/cropped_video.gif" alt="project image" />
+        
+    </div>
+    <div class="col-md-8 col-sm-12 project-description">
+        <h3>Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis</h3>
+        <br>
+        <div class="authors">
+            <span class='author-name'><strong>Anutam Srinivasan</strong>,</span> <span class='author-name'>Antoine Leeman</span>,<span class='author-name'>Glen Chou</span>
+        </div>
+
+        <em>L4DC</em>, 2026
+        <br>
+        
+        
+        
+        
+        
+        <a href="" data-toggle="modal" data-target="#publicationBibModal4">bib</a>
+        <div class="modal fade" id="publicationBibModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-md-table" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body code text-monospace bib-text">
+                    @inproceedings{srinivasan2026safety,<br />
+  title={Safety Beyond the Training Data: Robust Out-of-Distribution MPC via Conformalized System Level Synthesis},<br />
+  author={Srinivasan, Anutam and Leeman, Antoine and Chou, Glen},<br />
+  booktitle={Learning for Dynamics and Control},<br />
+  year={2026}<br />
+}<br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary copy-btn">Copy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+                 / 
+                
+                <a href="/publications/papers/l4dc_2026_cp_sls_mpc.pdf" target="_blank">paper</a>
+            
+        
+        
+             / 
+            
+            <a data-toggle="collapse" href="#abstract4" role="button" aria-expanded="false" aria-controls="abstract4">abstract</a>
+        
+
+        
+        <div class="collapse" id="abstract4">
+            <div class="abstract-body">
+                <p>We present a novel framework for robust out-of-distribution planning and control using conformal prediction (CP) and system level synthesis (SLS), addressing the challenge of ensuring safety and robustness when using learned dynamics models beyond the training data distribution. We first derive high-confidence model error bounds using weighted CP with a learned, state-control-dependent covariance model. These bounds are integrated into an SLS-based robust nonlinear model predictive control (MPC) formulation, which performs constraint tightening over the prediction horizon via volume-optimized forward reachable sets. We provide theoretical guarantees on coverage and robustness under distributional drift, and analyze the impact of data density and trajectory tube size on prediction coverage. Empirically, we demonstrate our method on nonlinear systems of increasing complexity, including a 4D car and a {12D} quadcopter, improving safety and robustness compared to fixed-bound and non-robust baselines, especially outside of the data distribution.</p>
             </div>
         </div>
         
@@ -193,8 +418,8 @@
         
         
         
-        <a href="" data-toggle="modal" data-target="#publicationBibModal2">bib</a>
-        <div class="modal fade" id="publicationBibModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <a href="" data-toggle="modal" data-target="#publicationBibModal5">bib</a>
+        <div class="modal fade" id="publicationBibModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog d-md-table" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -230,11 +455,11 @@
         
              / 
             
-            <a data-toggle="collapse" href="#abstract2" role="button" aria-expanded="false" aria-controls="abstract2">abstract</a>
+            <a data-toggle="collapse" href="#abstract5" role="button" aria-expanded="false" aria-controls="abstract5">abstract</a>
         
 
         
-        <div class="collapse" id="abstract2">
+        <div class="collapse" id="abstract5">
             <div class="abstract-body">
                 <p>Slow-moving vehicles relying on crustal magnetic anomaly navigation (MagNav) or vehicles revisiting the same location in a short time - such as those used for surveys in magnetic anomaly mapping -  require fixed ground stations within 100 km of the vehicle’s trajectory to measure and remove the geomagnetic disturbance field from magnetic readings. This approach is impractical due to the limited network of fixed-ground magnetometer stations, making long-range (several hundred kilometers long) aeromagnetic surveys for anomaly map-making infeasible. To address these challenges, we developed the Extended Reference Station Model (ERSM). ERSM applies a longitudinal correction and regression model to an extended reference ground magnetometer station (ERS) to produce an estimate of the local temporal disturbance field. ERSM is regression model-agnostic, so we implemented a linear regression, a k-nearest neighbors (kNN) regression, and a neural-network regression model to assess performance benefits. Our results show typical performance below 10nT root mean square error and median performance below 5nT for typical use with the kNN and neural-net model for farther distances and below 5nT performance using the linear regression model on stations with proximity. We also consider how space-weather events, water-body separation, and proximity to polar regions affect the model performance based on ERS selection.</p>
             </div>
@@ -264,8 +489,8 @@
         
         
         
-        <a href="" data-toggle="modal" data-target="#publicationBibModal3">bib</a>
-        <div class="modal fade" id="publicationBibModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <a href="" data-toggle="modal" data-target="#publicationBibModal6">bib</a>
+        <div class="modal fade" id="publicationBibModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog d-md-table" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -295,17 +520,17 @@
             
                  / 
                 
-                <a href="/publications/papers/preprint_2025_fedcf.pdf" target="_blank">preprint</a>
+                <a href="/publications/papers/preprint_2026_fedcf.pdf" target="_blank">preprint</a>
             
         
         
              / 
             
-            <a data-toggle="collapse" href="#abstract3" role="button" aria-expanded="false" aria-controls="abstract3">abstract</a>
+            <a data-toggle="collapse" href="#abstract6" role="button" aria-expanded="false" aria-controls="abstract6">abstract</a>
         
 
         
-        <div class="collapse" id="abstract3">
+        <div class="collapse" id="abstract6">
             <div class="abstract-body">
                 <p>Conformal Prediction (CP) is a widely used technique for quantifying uncertainty in machine learning models. In its standard form, CP offers probabilistic guarantees on the coverage of the true label, but it is agnostic to sensitive attributes in the dataset. Several recent works have sought to incorporate fairness into CP by ensuring conditional coverage guarantees across different subgroups. One such method is Conformal Fairness (CF). In this work, we extend the CF framework to the Federated Learning setting and discuss how we can audit a federated model for fairness by analyzing the fairness-related gaps for different demographic groups. We empirically validate our framework by conducting experiments on several datasets spanning multiple domains, fully leveraging the exchangeability assumption.</p>
             </div>
@@ -335,8 +560,8 @@
         
         
         
-        <a href="" data-toggle="modal" data-target="#publicationBibModal4">bib</a>
-        <div class="modal fade" id="publicationBibModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <a href="" data-toggle="modal" data-target="#publicationBibModal7">bib</a>
+        <div class="modal fade" id="publicationBibModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog d-md-table" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -376,11 +601,11 @@ year={2025}<br />
         
              / 
             
-            <a data-toggle="collapse" href="#abstract4" role="button" aria-expanded="false" aria-controls="abstract4">abstract</a>
+            <a data-toggle="collapse" href="#abstract7" role="button" aria-expanded="false" aria-controls="abstract7">abstract</a>
         
 
         
-        <div class="collapse" id="abstract4">
+        <div class="collapse" id="abstract7">
             <div class="abstract-body">
                 <p>Conformal prediction has become increasingly popular for quantifying the uncertainty associated with machine learning models. Recent work in graph uncertainty quantification has built upon this approach for conformal graph prediction. The nascent nature of these explorations has led to conflicting choices for implementations, baselines, and method evaluation. In this work, we analyze the design choices made in the literature and discuss the tradeoffs associated with existing methods. Building on the existing implementations, we introduce techniques to scale existing methods to large-scale graph datasets without sacrificing performance. Our theoretical and empirical results justify our recommendations for future scholarship in graph conformal prediction.</p>
             </div>
@@ -410,8 +635,8 @@ year={2025}<br />
         
         
         
-        <a href="" data-toggle="modal" data-target="#publicationBibModal5">bib</a>
-        <div class="modal fade" id="publicationBibModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <a href="" data-toggle="modal" data-target="#publicationBibModal8">bib</a>
+        <div class="modal fade" id="publicationBibModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog d-md-table" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -451,11 +676,11 @@ year={2025}<br />
         
              / 
             
-            <a data-toggle="collapse" href="#abstract5" role="button" aria-expanded="false" aria-controls="abstract5">abstract</a>
+            <a data-toggle="collapse" href="#abstract8" role="button" aria-expanded="false" aria-controls="abstract8">abstract</a>
         
 
         
-        <div class="collapse" id="abstract5">
+        <div class="collapse" id="abstract8">
             <div class="abstract-body">
                 <p>Conformal Prediction (CP) is a popular method for uncertainty quantification with machine learning models. While conformal prediction provides probabilistic guarantees regarding the coverage of the true label, these guarantees are agnostic to the presence of sensitive attributes within the dataset. In this work, we formalize Conformal Fairness, a notion of fairness using conformal predictors, and provide a theoretically well-founded algorithm and associated framework to control for the gaps in coverage between different sensitive groups. Our framework leverages the exchangeability assumption (implicit to CP) rather than the typical IID assumption, allowing us to apply the notion of Conformal Fairness to data types and tasks that are not IID, such as graph data. Experiments were conducted on graph and tabular datasets to demonstrate that the algorithm can control fairness-related gaps in addition to coverage aligned with theoretical expectations.</p>
             </div>

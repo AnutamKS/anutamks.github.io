@@ -1,0 +1,19 @@
+---
+title:  "Towards Auditing AI Systems in the Wild"
+date:   2026-05-20
+image: /publications/images/auditing_ai_systems.svg
+image_onhover: /publications/images/auditing_ai_systems.svg
+author: "Aditya Vadlamani, <strong>Anutam Srinivasan</strong>, Srinivasan Parthasarathy"
+authors: "</span> <span class='author-name'>Aditya Vadlamani</span>,<span class='author-name'><strong>Anutam Srinivasan</strong>,<span class='author-name'>Srinivasan Parthasarathy</span>"
+venue: "KDD, Blue Sky Track"
+bib: |
+  @inproceedings{vadlamani2026towards,
+  title={Towards Auditing AI Systems in the Wild},
+  author={Vadlamani, Aditya and Srinivasan, Anutam and Parthasarathy, Srinivasan},
+  booktitle={Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  year={2026}
+  }
+links:
+  paper: "/publications/papers/kdd_bluesky_2026_auditing.pdf"
+---
+AI systems are increasingly deployed in real-world settings where their behavior is shaped by dynamic environments, evolving data distributions, and complex interactions with users and infrastructure. Traditional machine learning evaluation focuses on benchmarks and operates within sandboxed environments, providing only a limited view of the true system behavior *in the wild*. We argue for the development of principled auditing frameworks that monitor deployed AI systems throughout their lifecycle. We further propose framing auditing as a statistical problem of monitoring constraint violations under uncertainty, where desired properties (e.g., fairness and safety) are treated as risk-controlled constraints that must be continuously evaluated as systems evolve through iterative feedback. This perspective highlights the need for uncertainty-aware monitoring methods, socio-technical specifications of audit criteria, and auditing infrastructures that enable ongoing oversight of AI systems in the wild.

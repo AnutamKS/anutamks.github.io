@@ -1,0 +1,22 @@
+---
+title:  "Pixels to Proofs: Probabilistically-Safe Latent World Model Control via Parallel Conformal Robust MPC"
+date:   2026-06-12
+image: /publications/images/web_page_image.png
+image_onhover: /publications/images/mpc_plan_animation_combined_rope.gif
+author: "Devesh Nath*, <strong>Anutam Srinivasan*</strong>, Haoran Yin*, Ruitong Jiang, Jeffrey Fang, Glen Chou"
+authors: "</span> <span class='author-name'>Devesh Nath<span class='contribution-note'>*</span>,<span class='author-name'><strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>,</span> <span class='author-name'>Haoran Yin<span class='contribution-note'>*</span>,</span> <span class='author-name'>Ruitong Jiang</span>,<span class='author-name'>Jeffrey Fang</span>, <span class='author-name'>Glen Chou</span> <span class='contribution-note'>*Equal Contribution</span>"
+venue: "arXiv <span class='note'>(Under Review)</span>"
+bib: |
+  @article{nath2026pixels,
+    title={Pixels to Proofs: Probabilistically-Safe Latent World Model Control via Parallel Conformal Robust MPC},
+    author={Nath, Devesh and Srinivasan, Anutam and Yin, Haoran and Jiang, Ruitong and Fang, Jeffrey and Chou, Glen},
+    journal={arXiv preprint arXiv:2606.15594},
+    year={2026}
+  }
+links:
+  preprint: "/publications/papers/preprint_2026_sls-squared.pdf"
+  website: "https://trustworthyrobotics.github.io/SLS-squared/"
+  code: "https://github.com/trustworthyrobotics/SLS-squared"
+  video: "https://youtu.be/3sYYNSQqwSQ"
+---
+We present SLS<sup>2</sup>, a framework for safe feedback motion planning from pixels using robust model predictive control (MPC) in learned latent world models. Our approach trains an action-conditioned joint-embedding world model with compact Markovian latent states, enabling efficient gradient-based trajectory optimization through learned latent dynamics. To enforce safety for the true system despite imperfect latent predictions, we inform a GPU-accelerated system level synthesis (SLS) robust MPC scheme with conformal prediction to obtain calibrated latent error bounds and robust latent-space constraint sets. We further learn and conformalize a latent constraint checker, allowing the SLS planner to impose probabilistic safety constraints during closed-loop execution. We evaluate our method on vision-based control tasks, where it improves both goal-reaching performance and safety over latent world-model and safe-planning baselines.
