@@ -1,8 +1,8 @@
 ---
 title:  "FedCF: Fair Federated Conformal Prediction"
 date:   2025-09-29
-image: /publications/images/fed_cf.png
-image_onhover: /publications/images/fed_cf.png
+image: /publications/images/fedcf_pipeline.png
+image_onhover: /publications/images/fed_cf_pipeline.png
 author: "Anutam Srinivasan*, Aditya Vadlamani*, Amin Meghrazi,<br>Srinivasan Parthasarathy *Equal Contribution"
 authors: "<span class='author-name'><strong>Anutam Srinivasan<span class='contribution-note'>*</span></strong>,</span> <span class='author-name'>Aditya Vadlamani<span class='contribution-note'>*</span>,</span> <span class='author-name'>Amin Meghrazi,</span> <span class='author-name'>Srinivasan Parthasarathy</span> <span class='contribution-note'>*Equal Contribution</span>"
 venue: "arXiv <span class='note'>(Under Review)</span>"
